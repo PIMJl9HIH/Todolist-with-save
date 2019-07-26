@@ -1,0 +1,8 @@
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font: italic bold 24px/1.2 'Roboto' ,'sans-serif';
+  color: #5a6268;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,35 @@
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.todo-footer-info {
+  font: bold 12px/1 'Roboto';
+}
+
+.filter-btn {
+  display: inline-block;
+  color: #000;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 4px 5px;
+  transition: 0.3s ease-out;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+  border: 1px solid #8080802e;
+}

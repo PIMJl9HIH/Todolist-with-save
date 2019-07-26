@@ -1,0 +1,27 @@
+.create-task {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.create-task-add {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.create-task-input {
+  display: block;
+  width: calc(100% - 54px);
+  border: none;
+  border: 2px solid #5a6268;
+  padding: 20px 0 20px 50px;
+  font: italic 20px/1 'Roboto', 'sans-serif';
+}
