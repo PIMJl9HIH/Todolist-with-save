@@ -19,7 +19,8 @@ const tasks = (state = taskList.tasks, action) => {
     case TYPE.ADD_TODO:
       return [
         ...state, {
-          payload: Object.assign({}, state.payload, {id: payload.id, text: payload.text, isCompleted: payload.isCompleted})
+          // payload: Object.assign({}, state.payload, {id: payload.id, text: payload.text, isCompleted: payload.isCompleted})
+          payload: {...state.payload, id: payload.id, text: payload.text, isCompleted: payload.isCompleted}
         }
       ];
 

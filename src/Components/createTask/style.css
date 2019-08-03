@@ -6,7 +6,7 @@
 
 .create-task-add {
   display: inline-block;
-  font-size: 25px;
+  font-size: 0;
   font-weight: bold;
   padding: 20px;
   position: absolute;
@@ -16,6 +16,37 @@
   cursor: pointer;
   z-index: 10;
 }
+.create-task-add:before,
+.create-task-add:after {
+  content: '';
+  display: block;
+  background-color: darkgray;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  transition: 0.4s linear;
+}
+
+.create-task-add:before {
+  width: 20px;
+  height: 3px;
+}
+
+
+.create-task-add:after {
+  width: 3px;
+  height: 20px;
+}
+
+.create-task-add:hover:before,
+.create-task-add:hover:after {
+  opacity: 0.8;
+  background-color: black;
+}
+
+
 
 .create-task-input {
   display: block;

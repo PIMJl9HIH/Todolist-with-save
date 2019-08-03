@@ -31,6 +31,17 @@ class Todo extends Component {
     }
   }
 
+  addTaskClick = () => {
+    const {taskText} = this.state;
+    if (taskText.length > 3) {
+      const {addTodo} = this.props;
+      addTodo((new Date()).getTime(), taskText, false);
+      this.setState({
+        taskText: ''
+      })
+    }
+  }
+
   filterTasks = (tasks, filters) => {
     switch (filters) {
       case 'completed':
@@ -56,6 +67,7 @@ class Todo extends Component {
       <div className="todo">
         <CreateTask
           onKeyPress={this.addTask}
+          onClick={this.addTaskClick}
           onChange={this.handleInputText}
           value={taskText}
         />

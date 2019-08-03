@@ -2,14 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './style.css'
 
-const CreateTask = ({ value, onChange, onKeyPress }) => (
+const CreateTask = ({ value, onChange, onKeyPress, onClick }) => (
 
   <div className="create-task">
-    <span className="create-task-add">+</span>
+    <span
+      className="create-task-add"
+      onClick={onClick}
+    >+</span>
     <input
       className="create-task-input"
       type="text"
-      placeholder="Click to add task"
+      placeholder="Click or press 'enter' o add task"
       onChange={onChange}
       value={value}
       onKeyPress={onKeyPress}
